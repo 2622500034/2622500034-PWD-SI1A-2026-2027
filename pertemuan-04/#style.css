@@ -1,4 +1,5 @@
-* {
+<style>
+{
     box-sizing: border-box;
 }
 
@@ -39,6 +40,10 @@ nav a {
     color: #ffffff;
     text-decoration: bold
     font-decoration: none;
+}
+
+main {
+    display: grid;  
 }
 
 section {
@@ -173,3 +178,4 @@ footer {
 footer p {
     margin: 0;
 }
+</style>
