@@ -17,7 +17,7 @@ header {
     color: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #00264d;
+    border: 1px solid #00264d;
 }
 
 header h1 {
@@ -29,11 +29,8 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
     gap: 8px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    
 }
 
 nav a {
@@ -45,8 +42,9 @@ nav a {
 
 main {
     display: grid;  
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 16px;
+    
 }
 
 section {
@@ -115,7 +113,6 @@ section {
     padding: 8px 24px;
     border: 1px solid #e6e6e6;
  }
-
  #contact {
     background-color: #f8fafc;
     border: 1px solid #cbd5e1;
@@ -124,7 +121,6 @@ section {
     font-family: Arial, sans-serif;
     grid-column: 1 / -1;
  }
-
 #contact h2 {
     color: #003366;
     border-bottom: 2px solid #003366;
@@ -132,19 +128,14 @@ section {
     margin-top: 0;
     margin-bottom: 16px;
 }
-
  .form-group {
     margin: 12px 0;
 }
-
 #contact label {
     color: #1f2937;
     font-weight: bold;
 }
-
 .input-form {
-    background-color: #ffffff;
-    color: #111827;
     font-family: Arial, sans-serif;
     font-size: 16px;
     padding: 8px;
@@ -153,12 +144,10 @@ section {
     width: 100%;
     max-width: 100%;
 }
-
 #contact textarea {
    min-height: 80px;
    resize: vertical;
  }
-
  #contact button {
     cursor: pointer;
     background-color: #003366;
@@ -168,7 +157,6 @@ section {
     margin: 8px 6px 0 0;
     border: 1px solid #003366;
  }
-
  /* Footer */
 footer {
     background-color: #003366;
@@ -185,6 +173,20 @@ footer p {
 
 @media (min-width: 768px) {
    /* aturan CSS untuk viewport dengan lebar minimal 768px */
+   main {
+       grid-template-columns: 1fr 1fr;
+   }
+
+   nav ul {
+       flex-direction: row;
+       justify-content: flex-start;
+       align-items: center;
+       gap: 16px;
+   }
+
+   #contact {
+       grid-column: 1 / -1;
+   }
 }
 
 </style>
