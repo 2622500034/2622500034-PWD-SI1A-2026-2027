@@ -38,12 +38,9 @@ nav ul {
 
 nav a {
     color: #ffffff;
-    text-decoration: bold
-    font-decoration: none;
-}
-
-@media (min-width: 768px) {
-   /* aturan CSS untuk viewport dengan lebar minimal 768px */
+    font-weight: bold;
+    text-decoration: none;
+   
 }
 
 main {
@@ -185,4 +182,9 @@ footer {
 footer p {
     margin: 0;
 }
+
+@media (min-width: 768px) {
+   /* aturan CSS untuk viewport dengan lebar minimal 768px */
+}
+
 </style>
