@@ -37,7 +37,7 @@
 
         nav a {
             color: #ffffff;
-            font-weight: bold
+            font-weight: bold;
             text-decoration: none;
         }
 
@@ -172,11 +172,29 @@
             background-color: #003366;
             color: #ffffff;
             text-align: center;
-            padding: 14px; 20px;
+            padding: 14px 20px;
             margin-top: 20px;
             border: 1px solid #00264d;
         }
 
         footer p {
             margin: 0;
+        }
+
+        @media (min-width: 768px) {
+            /* aturan CSS untuk viewport dengan lebar minimal 768px */
+            main {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            nav ul {
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 16px;
+            }
+
+            #contact {
+                grid-column: 1 / -1;
+            }
         }
