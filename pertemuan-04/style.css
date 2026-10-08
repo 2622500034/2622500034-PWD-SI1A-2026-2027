@@ -41,6 +41,12 @@
             text-decoration: none;
         }
 
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
         section {
             width: 100%;
 
