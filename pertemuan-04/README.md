@@ -1,4 +1,5 @@
 Nim : 2622500034
+
 Nama: Shella madina
 
 Hari ini saya mempelajari
