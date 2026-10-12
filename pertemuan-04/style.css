@@ -153,7 +153,7 @@
         }
 
         #contact textarea {
-            miin-height: 80px;
+            min-height: 80px;
             resize: vertical;
         }
 
@@ -161,7 +161,7 @@
             cursor: pointer;
             background-color: #003366;
             color: #ffffff;
-            font-weigth: bold;
+            font-weight: bold;
             padding: 8px 14px;
             margin: 8px 6px 0 0;
             border: 1px solid #003366;
