@@ -1,2 +1,7 @@
-# pertemuan-02
-<br>menambahkan file pada pertemauan 2<br>
+Nim: 2622500034
+
+Nama: Shella Madina
+
+Hari ini saya mempelajari
+
+1. 
