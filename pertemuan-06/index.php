@@ -1,18 +1,14 @@
 <?php
-// pengujian awal eksekusi PHP.
-echo "PHP berhasil dijalankan.";
-?>
-
-<?php
-// P6: PHP dasar dan pemograman sisi peladen
-// Bagian 1: variabel dan konstanta
 $nim = "2622500034";
 $namaMahasiswa = "Shella madina";
 $programStudi = "sistem informasi";
 $tahunAkademik = "2026/2027";
 $semester = 1;
+$ipk = 3.8;
 $statusAktif = true;
 $catatanTambahan = null;
+const NAMA_MATA_KULIAH = "Pemograman Web Dasar";
+const PROFIL_GITHUB = "https://github.com/2622500034";
 ?>
 
 <!doctype html>
@@ -25,19 +21,6 @@ $catatanTambahan = null;
   </head>
   
   <body>
-    <?php
-//Komentar satu baris.
-echo "Keluaran menggunakan echo.";
-
-/*
-Komentar beberapa baris.
-Komentar ini tidak ditampilkan pada halaman.
-*/
-?>
-<p> konten HTML statis.</p>
-<?php
-echo "<p>konten yang dihasilkan oleh PHP.</p>";
-?>
     <header>
       <div class="header-top">
       <h1>Profil Mahasiswa</h1>
