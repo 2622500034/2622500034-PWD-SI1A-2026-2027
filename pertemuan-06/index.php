@@ -16,6 +16,14 @@ $batasSemester = 8;
 $sisaSemester = $batasSemester - $semester;
 $semesterValid = $semester >= 1 && $semester <= $batasSemester;
 $statusSemester = ($semesterValid && $statusAktif) ? "Sesuai rentang" : "Perlu diperiksa";
+// Bagian 3: Percabangan if-elseif-else
+if ($semester < 3) { 
+  $keteranganSemester = "Semester awal"; 
+} elseif ($semester <= 6) { 
+  $keteranganSemester = "Semester menengah"; 
+} else { 
+  $keteranganSemester = "Semester akhir"; 
+} 
 ?>
 
 <!doctype html>
@@ -68,7 +76,8 @@ $statusSemester = ($semesterValid && $statusAktif) ? "Sesuai rentang" : "Perlu d
         <h3>Profil Singkat</h3>
                 <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p> 
                 <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
-                <P>saya mahasiswa program studi: <?php echo $programStudi; ?></p>
+                <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
+                <P>Saya mahasiswa program studi: <?php echo $programStudi; ?></p>
                 <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p> 
                 <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "Belum ada" : $catatanTambahan; 
                 ?>
