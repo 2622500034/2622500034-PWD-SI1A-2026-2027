@@ -2,6 +2,19 @@
 // pengujian awal eksekusi PHP.
 echo "PHP berhasil dijalankan.";
 ?>
+
+<?php
+// P6: PHP dasar dan pemograman sisi peladen
+// Bagian 1: variabel dan konstanta
+$nim = "2622500034";
+$namaMahasiswa = "Shella madina";
+$programStudi = "sistem informasi";
+$tahunAkademik = "2026/2027";
+$semester = 1;
+$statusAktif = true;
+$catatanTambahan = null;
+?>
+
 <!doctype html>
 <html lang="id">
   <head>
@@ -12,7 +25,6 @@ echo "PHP berhasil dijalankan.";
   </head>
   
   <body>
-
     <?php
 //Komentar satu baris.
 echo "Keluaran menggunakan echo.";
