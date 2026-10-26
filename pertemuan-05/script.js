@@ -11,7 +11,7 @@ navToggle.addEventListener("click", () => {
   } else {
     navToggle.setAttribute("aria-label", "Buka navigasi");
   }
-});
+})
 
 const contactForm = document.getElementById("contactForm");
 const formFeedback = document.getElementById("formFeedback");
