@@ -204,7 +204,7 @@ switch ($programStudi) {
     </main>
 
     <footer>
-      <p>&copy; 2026 Shella Madina [2622500034] </p>
+       <p>&copy; <?= date("Y") ?> <?php echo $namaMahasiswa; ?> [<?= $nim ?>]</p> 
     </footer>
     <hr>
     <script src="script.js"></script>
