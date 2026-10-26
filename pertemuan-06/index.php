@@ -24,6 +24,8 @@ if ($semester < 3) {
 } else { 
   $keteranganSemester = "Semester akhir"; 
 } 
+$namaProdi = ($programStudi == "SI") ? "Sistem Informasi" : (($programStudi == "TI") ? "Teknik 
+Informatika" : "Lainnya"); 
 ?>
 
 <!doctype html>
@@ -74,13 +76,14 @@ if ($semester < 3) {
       <h2>Tentang Saya</h2>
       <article>
         <h3>Profil Singkat</h3>
-                <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p> 
-                <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
-                <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
-                <P>Saya mahasiswa program studi: <?php echo $programStudi; ?></p>
-                <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p> 
-                <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "Belum ada" : $catatanTambahan; 
-                ?>
+        <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p> 
+        <p>Status mahasiswa: <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?></p>
+        <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p> 
+        <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
+        <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
+        <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p> 
+        <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "Belum ada" : $catatanTambahan; 
+        ?>
 
         <h3>Target Belajar</h3>
         <ol>
