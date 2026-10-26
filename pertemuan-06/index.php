@@ -1,17 +1,21 @@
 <?php
+//P6: PHP dasar dan pemograman sisi peladen
+// Bagian 1: Variabel dan konstanta
 $nim = "2622500034";
 $namaMahasiswa = "Shella madina";
 $programStudi = "sistem informasi";
 $tahunAkademik = "2026/2027";
 $semester = 1;
-// bagian 2: operator
-$batasSemester = 8;
-$sisaSemester = $batasSemester - $semester;
-$ipk = 3.8;
+$ipk = 3.75;
 $statusAktif = true;
 $catatanTambahan = null;
 const NAMA_MATA_KULIAH = "Pemograman Web Dasar";
 const PROFIL_GITHUB = "https://github.com/2622500034";
+// bagian 2: operator
+$batasSemester = 8;
+$sisaSemester = $batasSemester - $semester;
+$semesterValid = $semester >= 1 && $semester <= $batasSemester;
+$statusSemester = ($semesterValid && $statusAktif) ? "Sesuai rentang" : "Perlu diperiksa";
 ?>
 
 <!doctype html>
@@ -62,10 +66,12 @@ const PROFIL_GITHUB = "https://github.com/2622500034";
       <h2>Tentang Saya</h2>
       <article>
         <h3>Profil Singkat</h3>
-        <p>sisa semester hingga batas: <?php echo $sisaSemester; ?></p>
-        <section id="about">
-          <h2>Tentang Saya</h2>
-        <p>Saya mahasiswa Program Studi Sistem Informasi.</p>
+                <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p> 
+                <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
+                <P>saya mahasiswa program studi: <?php echo $programStudi; ?></p>
+                <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p> 
+                <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "Belum ada" : $catatanTambahan; 
+                ?>
 
         <h3>Target Belajar</h3>
         <ol>
