@@ -147,7 +147,16 @@ switch ($programStudi) {
         <form id="contactForm" action="index.php" method="get" novalidate>
           <div class="form-group">
             <label for="nama">Nama Lengkap</label><br />
-            <input class="input-form" type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" minlength="3" maxlength="50" required />
+
+            <input 
+            class="input-form"
+            type="text"
+            id="nama" 
+            name="nama" 
+            placeholder="Masukkan nama lengkap" 
+            minlength="3"
+            maxlength="50"
+            required />
           </div>
 
           <div class="form-group">
