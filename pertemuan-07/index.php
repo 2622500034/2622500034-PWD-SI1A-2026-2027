@@ -3,6 +3,12 @@
 if (isset($_POST['nama'])) {
   $nama = $_POST['nama'];
   echo "Nama yang diterima: " . htmlspecialchars($nama, ENT_QUOTES, 'UTF-8');
+  $email = $_POST['email'] ?? '';
+  $semesterForm = $_POST['semester'] ?? '';
+  $tanggal = $_POST['tanggal'] ?? '';
+  $jenispesan = $_POST['jenis_pesan'] ?? '';
+  $prodi = $_POST['prodi'] ?? '';
+  $pesan = $_POST['pesan'] ?? '';
 }
 //P6: PHP dasar dan pemograman sisi peladen
 // Bagian 1: Variabel dan konstanta
@@ -190,10 +196,10 @@ switch ($programStudi) {
 
           <div class="form-group">
             <p>Topik yang Diminati</p>
+            <input type="checkbox" id="minat-html" name="minat[]" value="HTML" />
             <label for="minat-html">HTML</label>
-            <input type="checkbox" id="minat-html" name="minat" value="HTML" />
+            <input type="checkbox" id="minat-css" name="minat[]" value="CSS" /> 
             <label for="minat-css">CSS</label>
-            <input type="checkbox" id="minat-css" name="minat" value="CSS" />
           </div>
 
           <div class="form-group">
