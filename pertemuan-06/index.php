@@ -167,10 +167,11 @@ switch ($programStudi) {
 
           <div class="form-group">
             <p>Jenis Pesan</p>
-            <label for="pertanyaan">Pertanyaan</label>
             <input type="radio" id="pertanyaan" name="jenis_pesan" value="pertanyaan" required />
-            <label for="saran">Saran</label>
+            <label for="pertanyaan">Pertanyaan</label>
+            
             <input type="radio" id="saran" name="jenis_pesan" value="saran" />
+            <label for="saran">Saran</label>
           </div>
 
           <div class="form-group">
