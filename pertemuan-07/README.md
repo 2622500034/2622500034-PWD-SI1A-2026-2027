@@ -1,4 +1,5 @@
 Nama: shella madina
+
 Nim: 2622500034
 localhost : http://localhost/2622500034-PWD-SI1A-2026-2027/pertemuan-07/
 1. menyalin artefak pertemuan-06 ke pertemuan-07 untuk digunakan sebagai baseline
