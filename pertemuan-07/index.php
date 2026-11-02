@@ -345,11 +345,11 @@ $pesan = $_SESSION['pesan'] ?? '';
           </P>
 
           <p>Tanggal kunjungan:
-            <?= htmlspecialchars($Tanggal, ENT_QUOTES, 'UTF-8') ?>
+            <?= htmlspecialchars($tanggal, ENT_QUOTES, 'UTF-8') ?>
           </p>
 
           <p>Jenis pesan:
-            <?= htmlspecialchars($jenispesan, ENT_QUOTES, 'UTF-8') ?>
+            <?= htmlspecialchars($jenisPesan, ENT_QUOTES, 'UTF-8') ?>
           </p>
 
           <p>Program studi:
