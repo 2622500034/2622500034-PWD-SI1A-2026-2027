@@ -1,3 +1,9 @@
+<?php
+$nim = "2622500034";
+$namaMahasiswa = "Shella madina";
+$programStudi = "sistem informasi";
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,9 +24,9 @@
         <h2>Profile</h2>
         <div class="profile">
             <img src="img/fotoi.jpg">
-            <p>Nama: Shella Madina</p>
-            <p>NIM: 2622500034</p>
-            <P>Program Studi: Sistem Informasi</P>
+            <p>Nama: <?php echo $namaMahasiswa ?></p>
+            <p>NIM: <?php echo $nim ?></p>
+            <P>Program Studi: <?php echo $programStudi ?></P>
         </div>
      </div>
     <div id="footer">
