@@ -9,16 +9,16 @@
         <h1>Pet House Cimiw</h1>
     </div>
     <div id="menu">
-        <a href="index.html">Home</a>
-        <a href="jenis.html">Jenis Kucing</a>
-        <a href="profil.html">Profil</a>
-        <a href="form.html">Form</a>
+        <a href="index.php">Home</a>
+        <a href="jenis.php">Jenis Kucing</a>
+        <a href="profil.php">Profil</a>
+        <a href="form.php">Form</a>
     </div>
     
     <section id="contact">
             <h2>Kontak</h2>
 
-            <form id="contactForm" action="form.html" method="get" novalidate>
+            <form id="contactForm" action="form.php" method="get" novalidate>
                 <div class="form-group">
                     <label for="nama">Nama Lengkap</label><br />
                     <input

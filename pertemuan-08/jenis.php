@@ -9,10 +9,10 @@
         <h1>Pet House Cimiw</h1>
     </div>
     <div id="menu">
-        <a href="index.html">Home</a>
-        <a href="jenis.html">Jenis Kucing</a>
-        <a href="profil.html">Profil</a>
-        <a href="form.html">Form</a>
+        <a href="index.php">Home</a>
+        <a href="jenis.php">Jenis Kucing</a>
+        <a href="profil.php">Profil</a>
+        <a href="form.php">Form</a>
     </div>
     <div id="isi2" class="isi2">
         
