@@ -10,6 +10,7 @@ body {
     margin: 0;
     font-weight: normal;
 }
+
 #menu {
     float: left;
     width: 130px;
@@ -29,6 +30,83 @@ body {
     padding: 30px;
     background-color: #fbeff2;
 }
+
+#isi2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 130px;
+    min-height: 370px;
+    padding: 30px;
+    background-color: #fbeff2;
+}
+
+#contact {
+            flex: 1;
+            display: block;
+            text-align: left;
+            background-color: #fbeff2;
+            border: 1px solid #fbe0f2;
+            padding: 47px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            grid-column: 1 / -1;
+        }
+
+        #contact h2 {
+            color: #e0ff2f;
+            border-bottom: 2px solid #e0ff2f;
+            padding-bottom: 6px;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        .form-group {
+            margin: 12px 0;
+        }
+
+        #contact label {
+            
+            color: #1f2937;
+            font-weight: bold;
+        }
+
+        .input-form {
+            background-color: #fbeff2;
+            color: #111827;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            padding: 8px;
+            margin: 4px 0;
+            border: 1px solid #94a3b8;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+
+        #contact textarea {
+            min-height: 80px;
+            resize: vertical;
+            box-sizing: border-box;
+        }
+
+        #contact button {
+            cursor: pointer;
+            background-color: #e0ff2f;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 8px 14px;
+            margin: 8px 6px 0 0;
+            border: 1px solid #e0ff2f;
+        }
+
+#isi img {
+    text-align: center;
+}
+
 #isi h2 {
     text-align: center;
     margin: 0 0 10px 0;
@@ -36,6 +114,12 @@ body {
 #gambar img {
     width: 45px;
     height: 50px;
+}
+.profile img {
+    display: inline-block;
+    width: 110px;
+    margin: 10px;
+    text-align: justify;
 }
 .jenis {
     display: inline-block;
@@ -57,6 +141,15 @@ body {
     font-weight: bold;
     text-align: justify;
 }
+
+.form-feedback-error {
+      color: #c62828;
+      }
+
+      .form-feedback-success {
+       color: #2e7d32;
+      }
+
 #footer {
     clear: both;
     background-color: #ff0ca2;
