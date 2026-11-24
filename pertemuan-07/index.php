@@ -98,9 +98,9 @@ $ipk = 3.75;
 $statusAktif = true;
 $catatanTambahan = null;
 
- const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
+ 
+const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
  const PROFIL_GITHUB = "https://github.com/2622500034";
-
 // bagian 2: operator
 $batasSemester = 8;
 $sisaSemester = $batasSemester - $semester;

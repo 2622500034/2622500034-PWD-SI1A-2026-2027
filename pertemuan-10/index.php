@@ -6,19 +6,19 @@ require_once("fungsi.php"); #Penggunaan require_once() memastikan berkas tersebu
 
 // P9: Memproses data formulir dan menyimpannya ke dalam session.
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-  $nama = trim((string) ($_POST["nama"] ?? ""));
-  $email = trim((string) ($_POST["email"] ?? ""));
-  $semesterForm = trim((string) ($_POST["semester"] ?? ""));
-  $tanggal = trim((string) ($_POST["tanggal"] ?? ""));
-  $jenisPesan = trim((string) ($_POST["jenis_pesan"] ?? ""));
-  $minat = $_POST["minat"] ?? [];
-  $prodi = trim((string) ($_POST["prodi"] ?? ""));
-  $pesan = trim((string) ($_POST["pesan"] ?? ""));
+$nama = trim((string) ($_POST["nama"] ?? ""));
+$email = trim((string) ($_POST["email"] ?? ""));
+$semesterForm = trim((string) ($_POST["semester"] ?? ""));
+$tanggal = trim((string) ($_POST["tanggal"] ?? ""));
+$jenisPesan = trim((string) ($_POST["jenis_pesan"] ?? ""));
+$minat = $_POST["minat"] ?? [];
+$prodi = trim((string) ($_POST["prodi"] ?? ""));
+$pesan = trim((string) ($_POST["pesan"] ?? ""));
 
-  // Checkbox dapat mengirimkan lebih dari satu nilai.
-  if (!is_array($minat)) {
-    $minat = [];
-  }
+// Checkbox dapat mengirimkan lebih dari satu nilai.
+if (!is_array($minat)) {
+$minat = [];
+}
 
   // Menyimpan semua data formulir ke dalam satu larik asosiatif di session.
   $_SESSION["form_data"] = [
@@ -35,11 +35,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   // PRG: mengarahkan kembali ke halaman sebelum menghasilkan keluaran HTML.
   header("Location: index.php#contact");
   exit;
+}
 
 // P6: PHP dasar dan pemrograman sisi peladen
 // Bagian 1: Variabel dan konstanta
-$nim = "0344300002";
-$namaMahasiswa = "Cantika Putih";
+$nim = "2622500034";
+$namaMahasiswa = "Shella madina";
 $programStudi = "SI";
 $tahunAkademik = "2026/2027";
 $semester = 4;
@@ -206,85 +207,6 @@ bersihkan(NAMA_MATA_KULIAH); ?></strong> pada tahun akademik <?= bersihkan($tahu
 saya</a>.
   </p>
 
-  <form id="contactForm" class="js-contact-form" data-validation="contact" action="index.php"
-method="post" novalidate>
-        <div class="form-group">
-          <label for="nama">Nama Lengkap</label><br />
-          <input class="input-form" type="text" id="nama" name="nama" placeholder="Masukkan nama
-lengkap" minlength="3" maxlength="50" required />
-        </div>
-
-  <main>
-    <section id="home">
-      <h2>Selamat Datang</h2>
-      <p>Halo, saya <strong><?php echo $namaMahasiswa ?></strong>. saya sedang mempelajari mata kuliah
-      <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik;
-      ?>.</p>
-      <img src="img/fotoi.jpg" alt="Foto profil Nama Mahasiswa" width="200" />
-    </section>
-
-    <section id="about">
-      <h2>Tentang Saya</h2>
-      <article>
-        <h3>Profil Singkat</h3>
-        <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p> 
-        <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
-        <p>Status mahasiswa: <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?></p>
-        <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p> 
-        <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
-        <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
-        <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p> 
-        <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "Belum ada" : $catatanTambahan; 
-        ?>
-
-        <h3>Target Belajar (Perulangan for)</h3>
-        <ol>
-          <?php
-          // Perulangan for tanpa array; materi larik dibahas pada P9.
-          for ($i = 1; $i <= 5; $i++) {
-            echo "<li>Target belajar ke-" . $i . ": ";
-            switch ($i) {
-              case 1:
-                echo "Memahami sintaks dasar PHP.";
-                break;
-              case 2:
-                echo "Menggunakan variabel dan konstanta.";
-                break;
-              case 3:
-                echo "Menerapkan operator dan percabangan.";
-                break;
-              case 4:
-                echo "Menggunakan perulangan for dan while.";
-                break;
-              default:
-                echo "Belum dipetakan";
-                break;
-           }
-           echo "</li>";
-  }
-  ?>
-</ol>
-
-<h3>Semester (Perulangan while):</h3> 
-                <ol> 
-                  <?php 
-                  $nomorSemester = 1; 
-                  while ($nomorSemester <= 3) { 
-                    echo "<li>Semester " . $nomorSemester . "</li>"; 
-                    $nomorSemester++; // operator penugasan 
-                  } 
-                  ?> 
-                </ol> 
-      </article>
-    </section>
-<section id="contact">
-        <h2>Kontak</h2>
-                
-        <p>
-          Kunjungi
-          <a target="_blank" href="https://github.com/2622500034/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
-        </p>
-
         <form id="contactForm" action="index.php" method="post" novalidate>
           <div class="form-group">
             <label for="nama">Nama Lengkap</label><br />
@@ -343,23 +265,23 @@ lengkap" minlength="3" maxlength="50" required />
         </form>
 
         <?php if (isset($_SESSION["form_data"])): ?>
-        <?php
+         <?php
         // Larik asosiatif untuk menghubungkan nama field dengan label.
         /*
         kunci larik tidak harus berupa angka.
         Kunci dapat berupa teks yang memiliki makna tertentu.
         */
         $labelMap = [
-        "nama" => "Nama Lengkap",
-        "email" => "Email",
-        "semester" => "Semester",
-        "tanggal" => "Tanggal Kunjungan",
-        "jenis_pesan" => "Jenis Pesan",
-        "prodi" => "Program Studi",
+        "nama"         => "Nama Lengkap",
+        "email"        => "Email",
+        "semester"     => "Semester",
+        "tanggal"      => "Tanggal Kunjungan",
+        "jenis_pesan"  => "Jenis Pesan",
+        "prodi"        => "Program Studi",
         ];
         ?>
         <article id="hasilKontak" class="submission-result" aria-live="polite">
-        <h3>Data Formulir yang Dikirim</h3>
+          <h3>Data Formulir yang Dikirim</h3>
 
         <?php foreach ($labelMap as $key => $label): ?>
           <p><strong><?= bersihkan($label); ?>:</strong> <?= bersihkan($_SESSION["form_data"][$key]);
@@ -397,4 +319,4 @@ lengkap" minlength="3" maxlength="50" required />
 <script src="script.js"></script>
 </body>
 
-</html>      
+</html>
