@@ -3,6 +3,7 @@ require_once("fungsi.php");
 require_once("koneksi.php");
 
 $sql = "SELECT * FROM tbl_kontak_2622500034";
+$hasil = mysqli_query($koneksi, $sql);
 
 // P9: Memproses data formulir dan menyimpannya ke dalam session.
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
