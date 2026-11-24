@@ -1,4 +1,6 @@
 <?php
+require_once("fungsi.php");
+require_once("koneksi.php");
 #kode setelah
 session_start();
 
