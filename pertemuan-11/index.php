@@ -1,10 +1,8 @@
 <?php
 require_once("fungsi.php");
 require_once("koneksi.php");
-#kode setelah
-session_start();
 
-require_once("fungsi.php"); #Penggunaan require_once() memastikan berkas tersebut tersedia dan tidak dimuat berulang kali.
+$sql = "SELECT * FROM tbl_kontak_2622500034";
 
 // P9: Memproses data formulir dan menyimpannya ke dalam session.
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
