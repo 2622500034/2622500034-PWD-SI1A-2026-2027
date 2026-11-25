@@ -6,6 +6,15 @@ require_once("koneksi.php");
 $sql = "SELECT * FROM tbl_kontak_2622500034";
 $hasil = mysqli_query($koneksi, $sql);
 
+if (!$hasil) {
+die("Kueri SELECT gagal dijalankan.");
+}
+
+$dataKontak = [];
+while ($baris = mysqli_fetch_assoc($hasil)) {
+$dataKontak[] = $baris;
+}
+
 
 // P9: Memproses data formulir dan menyimpannya ke dalam session.
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
